@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HYg-v3-mnb">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="osT-Yw-l00">
+            <objects>
+                <viewController id="3Eh-hO-7uo" customClass="ViewController" customModule="Demo_VCC_FinanceEngine_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NVc-HR-U80">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mAa-zL-2xZ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="DWr-cB-IGb">
+                                        <rect key="frame" x="135" y="317" width="144" height="184"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oUy-pd-yzk">
+                                                <rect key="frame" x="0.0" y="0.0" width="144" height="31"/>
+                                                <color key="backgroundColor" red="0.0" green="0.26274509800000001" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Demo All View"/>
+                                                <connections>
+                                                    <action selector="btnDemoAllViewDidTap:" destination="3Eh-hO-7uo" eventType="touchUpInside" id="aQQ-ln-Ok9"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H7e-XV-FI8">
+                                                <rect key="frame" x="0.0" y="51" width="144" height="31"/>
+                                                <color key="backgroundColor" red="0.0" green="0.26274509800000001" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Demo Saving View"/>
+                                                <connections>
+                                                    <action selector="btnDemoSavingViewDidTap:" destination="3Eh-hO-7uo" eventType="touchUpInside" id="Pf8-pd-XJU"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G5G-SU-Raf">
+                                                <rect key="frame" x="0.0" y="102" width="144" height="31"/>
+                                                <color key="backgroundColor" red="0.0" green="0.26274509800000001" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Demo Loan View"/>
+                                                <connections>
+                                                    <action selector="btnDemoLoanViewDidTap:" destination="3Eh-hO-7uo" eventType="touchUpInside" id="8zn-sb-PQN"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dC7-4r-OzO">
+                                                <rect key="frame" x="0.0" y="153" width="144" height="31"/>
+                                                <color key="backgroundColor" red="0.0" green="0.26274509800000001" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Demo Pay View"/>
+                                                <connections>
+                                                    <action selector="btnDemoPayViewDidTap:" destination="3Eh-hO-7uo" eventType="touchUpInside" id="5NE-7b-RNv"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="DWr-cB-IGb" firstAttribute="centerY" secondItem="mAa-zL-2xZ" secondAttribute="centerY" id="KN0-2m-Whf"/>
+                                    <constraint firstItem="DWr-cB-IGb" firstAttribute="centerX" secondItem="mAa-zL-2xZ" secondAttribute="centerX" id="vmg-hQ-yYr"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hyL-qx-ONz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hyL-qx-ONz" firstAttribute="bottom" secondItem="mAa-zL-2xZ" secondAttribute="bottom" id="8e2-Up-Hlw"/>
+                            <constraint firstItem="mAa-zL-2xZ" firstAttribute="leading" secondItem="hyL-qx-ONz" secondAttribute="leading" id="MSu-ad-Rkx"/>
+                            <constraint firstItem="hyL-qx-ONz" firstAttribute="trailing" secondItem="mAa-zL-2xZ" secondAttribute="trailing" id="OyP-Ph-Sam"/>
+                            <constraint firstItem="mAa-zL-2xZ" firstAttribute="top" secondItem="hyL-qx-ONz" secondAttribute="top" id="fU1-G6-0g0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="FT0-zP-jb8"/>
+                    <connections>
+                        <outlet property="vieContent" destination="mAa-zL-2xZ" id="9dj-RK-34Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZRV-bv-t5d" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="114.50892857142857"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="INO-Df-vj8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="HYg-v3-mnb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="diQ-sh-Dbg">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="3Eh-hO-7uo" kind="relationship" relationship="rootViewController" id="Md7-BQ-n2f"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G9T-VE-gFA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-407" y="115"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
